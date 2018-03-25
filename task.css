@@ -1,0 +1,169 @@
+/*Main*/
+html{
+    background: url("task.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+    flex-direction: column;
+}
+body{
+    background: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    min-height: 500px;
+    max-width: 960px;
+    min-width: 320px;
+    margin: 30px 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+li{
+    list-style-type: none;
+}
+input{
+    border: 1px solid;
+}
+/*Main*/
+
+/*Number style*/
+#button_0, #button_5, #button_10, #button_15, #button_20{
+    font-weight: bold;
+}
+/*Number style*/
+
+/*Interface*/
+.sum{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+}
+.sum p{
+    font-size: 40px;
+    align-items: center;
+}
+/*Interface*/
+
+/*Input*/
+
+#number_2{
+    display: none;
+}
+#number_main{
+    display: inline;
+    font-size: inherit;
+    width: 3rem;
+    height: 38px;
+}
+#number_main_1{
+    display: flex;
+}
+#number_main_2{
+    display: none;
+}
+#number_main_3{
+    display: none;
+}
+.input{
+    max-width: 960px;
+    min-width: 320px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.input input{
+    text-align: center;
+    width: 2rem;
+    font-size: 1.5rem;
+}
+.input_number_1{
+    flex: 0 1 30%;
+    text-align: center;
+    z-index: 999;
+    margin-left: 5%;
+}
+#input_replace_7{
+    display: none;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-top: 10px;
+}
+.input_number_2{
+    flex: 0 1 20%;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 999;
+}
+#input_replace_11{
+    display: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+/*Input*/
+
+/*Canvas*/
+
+#cnvs{
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+#line{
+    width: 100%;
+}
+/*Canvas*/
+
+/*Line*/
+
+.line{
+    background: #f8ebcd;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+.line_ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 895px;
+    left: 19px;
+    right: 46px;
+    top: 40px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /*height: 100%;*/
+}
+.line_li{
+    background: #FEF7CF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+/*Line*/
+
+/*.line_li:hover{*/
+    /*background: yellow;*/
+    /*transition: 0.4s ease-out;*/
+    /*color: red;*/
+/*}*/
