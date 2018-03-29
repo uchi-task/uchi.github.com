@@ -1,5 +1,5 @@
 /*Main*/
-html{
+html {
     background: url("task.jpg") 100% 100% no-repeat;
     background-size: cover;
     display: flex;
@@ -8,7 +8,8 @@ html{
     min-width: 100%;
     flex-direction: column;
 }
-body{
+
+body {
     background: ghostwhite;
     display: flex;
     flex-direction: column;
@@ -20,55 +21,84 @@ body{
     border-radius: 30px;
     padding: 10px;
 }
-li{
+
+li {
     list-style-type: none;
 }
-input{
+
+input {
     border: 1px solid;
 }
+
+/*Animation*/
+.fadeIn{
+    animation-duration: 3s;
+}
+/*Animation*/
+
 /*Main*/
 
 /*Number style*/
-#button_0, #button_5, #button_10, #button_15, #button_20{
+#button_0, #button_5, #button_10, #button_15, #button_20 {
     font-weight: bold;
 }
+
 /*Number style*/
 
 /*Interface*/
-.sum{
+.sum {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 20px 50px;
 }
-.sum p{
+
+.sum p {
     font-size: 40px;
     align-items: center;
 }
+
 /*Interface*/
+
+/*Top*/
+#span_1, #span_2, #span_3 {
+    /*background: blue;*/
+    padding: 0 5px;
+}
+
+/*Top*/
 
 /*Input*/
 
-#number_2{
+#number_2 {
     display: none;
 }
-#number_main{
-    display: inline;
+
+#number_main {
+    display: none;
     font-size: inherit;
     width: 3rem;
     height: 38px;
+    margin: 0 10px;
 }
-#number_main_1{
+
+#number_main_1 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-#number_main_2{
+
+#number_main_2 {
     display: none;
 }
-#number_main_3{
+
+#number_main_3 {
     display: none;
+    padding: 0 10px;
 }
-.input{
+
+.input {
     max-width: 960px;
     min-width: 320px;
     height: 150px;
@@ -78,53 +108,51 @@ input{
     flex-wrap: wrap;
     position: absolute;
 }
-.input input{
+
+.input input {
     text-align: center;
     width: 2rem;
     font-size: 1.5rem;
 }
-.input_number_1{
+
+.input_number_1 {
     flex: 0 1 30%;
     text-align: center;
     z-index: 999;
     margin-left: 5%;
 }
-#input_replace_7{
+
+#input_replace_7 {
     display: none;
     font-size: 1.5rem;
     justify-content: center;
     margin-top: 10px;
 }
-.input_number_2{
+
+.input_number_2 {
     flex: 0 1 20%;
     text-align: center;
     padding-top: 40px;
     z-index: 999;
 }
-#input_replace_11{
+
+#input_replace_11 {
     display: none;
     font-size: 1.5rem;
     margin-bottom: 10px;
     justify-content: center;
     margin-top: 10px;
 }
+
 /*Input*/
 
 /*Canvas*/
 
-#cnvs{
-    height: 150px;
-    width: 100%;
-    position: relative;
-}
-#line{
-    width: 100%;
-}
 /*Canvas*/
 
 /*Line*/
 
-.line{
+.line {
     background: #f8ebcd;
     display: flex;
     flex-direction: column;
@@ -135,7 +163,8 @@ input{
     height: 100%;
     flex: 1;
 }
-.line_ul{
+
+.line_ul {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -149,7 +178,8 @@ input{
     position: absolute;
     /*height: 100%;*/
 }
-.line_li{
+
+.line_li {
     background: #FEF7CF;
     margin: 0;
     padding: 0;
@@ -160,10 +190,27 @@ input{
     justify-content: center;
     cursor: pointer;
 }
+
 /*Line*/
 
-/*.line_li:hover{*/
-    /*background: yellow;*/
-    /*transition: 0.4s ease-out;*/
-    /*color: red;*/
-/*}*/
+.line_li:hover {
+    background: blue;
+    transition: 0.4s ease-out;
+}
+
+/*SVG*/
+.svg_arrow {
+    position: relative;
+    fill: none;
+    stroke: #e65100;
+    stroke-width: 2;
+}
+
+#arrow_0_7, #arrow_7_11, #arrow_0_8, #arrow_8_12, #arrow_0_9, #arrow_9_13, #arrow_9_11, #arrow_0_6, #arrow_6_11,
+#arrow_7_12, #arrow_8_13, #arrow_9_14, #arrow_9_12, #arrow_8_11, #arrow_8_14, #arrow_7_13, #arrow_7_14, #arrow_6_12,
+#arrow_6_13, #arrow_6_14{
+    display: none;
+    fill: none;
+}
+
+/*SVG*/
