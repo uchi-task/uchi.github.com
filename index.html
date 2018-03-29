@@ -7,25 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>7+4=?</title>
     <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 <body>
 <div class="sum">
-    <p id="number_main_1">7 + 4 = ?</p>
-    <p id="number_main_2">7 + 4 = <input id="number_main" type="text" size="1"> <span id="number_main_3">11</span></p>
+    <p id="number_main_1"><span id="span_1">7</span> + <span id="span_2">4</span> = <span id="span_3">?</span><span
+            id="number_main_3">11</span><input class="fadeIn" id="number_main" type="text" size="1"></p>
+    <!--<p id="number_main_2"> </p>-->
 </div>
 <div class="sprite" id="slider">
     <div class="input">
         <div class="input_number_1">
-            <input id="number_1" type="text" size="1">
+            <input class="fadeIn" id="number_1" type="text" size="1">
             <p id="input_replace_7">7</p>
         </div>
         <div class="input_number_2">
-            <input id="number_2" type="text" size="1">
+            <input class="fadeIn" id="number_2" type="text" size="1">
             <p id="input_replace_11">4</p>
         </div>
     </div>
-    <canvas id="cnvs" width="960" height="150"></canvas>
-
+    <!--<canvas id="cnvs" width="960" height="150"></canvas>-->
+    <svg class="svg_arrow" width="960" height="150" viewBox="0 0 960 150">
+        <g id="slide">
+            <path id="arrow_0_7" class="fadeIn" d="M40 150 Q 190 -20, 340 150"></path>
+            <path id="arrow_7_11" class="fadeIn" d="M340 150 Q 425 50, 510 150"></path>
+            <path id="arrow_0_8" class="fadeIn" d="M40 150 Q 212.5 -20, 380 150"></path>
+            <path id="arrow_8_12" class="fadeIn" d="M380 150 Q 470 50, 550 150"></path>
+            <path id="arrow_0_9" class="fadeIn" d="M40 150 Q 235 -20, 425 150"></path>
+            <path id="arrow_9_13" class="fadeIn" d="M425 150 Q 515 50, 595 150"></path>
+            <path id="arrow_9_11" class="fadeIn" d="M425 150 Q 470 50, 510 150"></path>
+            <path id="arrow_0_6" class="fadeIn" d="M40 150 Q 167.5 -20, 295 150"></path>
+            <path id="arrow_6_11" class="fadeIn" d="M295 150 Q 402.5 50, 510 150"></path>
+            <path id="arrow_7_12" class="fadeIn" d="M340 150 Q 447.5 50, 550 150"></path>
+            <path id="arrow_8_13" class="fadeIn" d="M380 150 Q 492.5 50, 595 150"></path>
+            <path id="arrow_9_14" class="fadeIn" d="M425 150 Q 537.5 50, 635 150"></path>
+            <path id="arrow_9_12" class="fadeIn" d="M425 150 Q 492.5 50, 550 150"></path>
+            <path id="arrow_8_11" class="fadeIn" d="M380 150 Q 447.5 50, 510 150"></path>
+            <path id="arrow_8_14" class="fadeIn" d="M380 150 Q 510 50, 635 150"></path>
+            <path id="arrow_7_13" class="fadeIn" d="M340 150 Q 470 50, 595 150"></path>
+            <path id="arrow_7_14" class="fadeIn" d="M340 150 Q 492.5 50, 635 150"></path>
+            <path id="arrow_6_12" class="fadeIn" d="M295 150 Q 425 50, 550 150"></path>
+            <path id="arrow_6_13" class="fadeIn" d="M295 150 Q 447.5 50, 595 150"></path>
+            <path id="arrow_6_14" class="fadeIn" d="M295 150 Q 470 50, 635 150"></path>
+        </g>
+    </svg>
+    <div class="arrow"></div>
     <div class="line">
         <ul class="line_ul">
             <li class="line_li" id="button_0">0</li>
